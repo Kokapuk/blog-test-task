@@ -1,0 +1,24 @@
+@use '@/styles/colors' as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue-primary;
+  border: 0;
+  color: $black-darker;
+  font-size: 1.8rem;
+  padding: .3em .8em;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: 250ms background-color;
+
+  &:hover:not(:active):not(:disabled) {
+    background-color: $blue-lighter;
+  }
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}

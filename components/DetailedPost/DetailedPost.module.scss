@@ -1,0 +1,20 @@
+@use '@/styles/colors' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 3.2rem;
+}
+
+.postedAt {
+  font-size: 1.8rem;
+  color: $grey-text;
+}
+
+.content {
+  font-size: 1.6rem;
+}

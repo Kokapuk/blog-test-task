@@ -1,0 +1,38 @@
+.header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(15px);
+  background-color: color-mix(in srgb, var(--background) 70%, transparent 30%);
+  z-index: 100;
+}
+
+.navLinks {
+  width: fit-content;
+  
+  ul {
+    display: flex;
+    gap: 50px;
+
+    li {
+      &::marker {
+        content: '';
+      }
+
+      a {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '@/styles/mixins' as *;
+
+.listWrapper {
+  margin: 50px auto;
+
+  @include desktop {
+    width: 800px;
+  }
+
+  @include tablet {
+    width: calc(100% - 50px * 2);
+  }
+
+  @include phone {
+    width: calc(100% - 25px * 2);
+  }
+}

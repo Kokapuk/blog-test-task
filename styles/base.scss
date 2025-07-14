@@ -1,0 +1,22 @@
+@use './colors' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  font-size: 62.5%;
+  --background: #{$black-primary};
+  background-color: var(--background);
+}
+
+input, button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

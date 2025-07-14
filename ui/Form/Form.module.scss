@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  button[type='submit'] {
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
