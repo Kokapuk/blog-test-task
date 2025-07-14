@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: 'Anonymous blog posts for everyone',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const posts = await getPosts();
 
